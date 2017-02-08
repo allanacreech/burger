@@ -3,7 +3,7 @@ body{height:100%;
    width:100%;
    margin:0;
    background:#000;
-
+  color: white;
   -webkit-background-size: cover;  
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -38,7 +38,7 @@ li {
 
 .create-update-form, #burgerDisplayDiv, #devoured {
   display: inline-block;
-  background: #bd1515;
+  /*background: #bd1515;*/
   margin: 5px;
   padding: 5px;
 }
@@ -48,17 +48,16 @@ li {
 }
 
 video {
-  position: fixed;
-    top:50%;
-    left:50%;
+  position: absolute;
+    top:0px;
+    left:0px;
     min-width:100%;
+    max-width: 1200%;
     min-height: 100%;
     width:auto;
     height:auto;
-    z-index: -100;
-    transform: translateX(-50%) translateY(-50%);
-    background-size: cover;
-    transition: 1s opacity;
+    z-index: -1000;
+    overflow: hidden;
   }
  @media screen and (max-width: 500px) {
   div {
@@ -68,7 +67,7 @@ video {
 
 @media screen and (max-device-width: 800px) {
   html {
-    background: url(//demosthenes.info/assets/images/polina.jpg) #000 no-repeat center center fixed;
+    background: url("/assets/img/Fire.mp4") #000 no-repeat center center fixed;
   }
   #bgvid {
     display: none;
