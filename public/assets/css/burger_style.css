@@ -1,13 +1,33 @@
-body{
-  /*background-image: url("..img/burger.jpg");*/
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: 75%;
-  background-color: deeppink;
+/*This is forcing body to whole page*/
+body{height:100%;
+   width:100%;
+   margin:0;
+   background:#000;
+
+  -webkit-background-size: cover;  
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /*Keeping all wording in the middle for right now*/
+ }
+
+/*burger image*/
+.burger-image{
+  display:block;
+  max-height: 275px;
+  margin-top: 20px;
+  margin-right: 200px;
+  padding: 0px 0px 0px 415px;
+}
+
+#header{
+  font-size: 30px;
+  text-align: center;
 }
 
 li {
-  background: #FAEBD7;
+  /*background: #FAEBD7;*/
+  background-image: 
   margin: 5px;
   padding: 5px;
 }
@@ -16,12 +36,41 @@ li {
   font-weight: bold;
 }
 
-.create-update-form {
-  background: aqua;
+.create-update-form, #burgerDisplayDiv, #devoured {
+  display: inline-block;
+  background: #bd1515;
   margin: 5px;
   padding: 5px;
 }
 
 .form-group {
   margin-bottom: 5px;
+}
+
+video {
+  position: fixed;
+    top:50%;
+    left:50%;
+    min-width:100%;
+    min-height: 100%;
+    width:auto;
+    height:auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    transition: 1s opacity;
+  }
+ @media screen and (max-width: 500px) {
+  div {
+    width: 70%;
+  }
+}
+
+@media screen and (max-device-width: 800px) {
+  html {
+    background: url(//demosthenes.info/assets/images/polina.jpg) #000 no-repeat center center fixed;
+  }
+  #bgvid {
+    display: none;
+  }
 }
