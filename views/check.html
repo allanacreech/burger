@@ -1,10 +1,3 @@
-<!--start of the video-->
-<video autoplay loop>
-  <source src="http://whirlwindproduction.com/Misc2/flames_high.mp4" type="video/mp4">
-  <source src="http://whirlwindproduction.com/Misc2/flames.mp4" type="video/mp4">
-</video>
-
-<!--container start -->
 <div class="container">
 
 	<!--Top header section -->
@@ -43,7 +36,7 @@
 
 		</div>
 		<div class="col col-lg-4" id="burgerDisplayDiv">
-			<ul class="list-unstyled">
+			<ul>
 				{{#each burgers}}
 				{{#unless this.devoured}}
 				<li>
@@ -63,7 +56,7 @@
 			<div id="devoured">
 			<h2>Burgers Yor Devoured!</h2>
 
-			<ul class="list-unstyled">
+			<ul>
 				{{#each burgers}}
 				{{#if this.devoured}}
 				<li>

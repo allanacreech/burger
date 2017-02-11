@@ -10,7 +10,12 @@ body{height:100%;
   background-size: cover;
   /*Keeping all wording in the middle for right now*/
  }
-
+button {
+  color: orange;
+}
+#ca{
+  color:black;
+}
 /*burger image*/
 .burger-image{
   display:block;
